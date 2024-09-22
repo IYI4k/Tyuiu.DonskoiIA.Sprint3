@@ -19,7 +19,7 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task0.V16.Lib
             {
                 ans *= Math.Pow(x / i, 3);
             }
-            return ans;
+            return Math.Round(ans, 3);
         }
     }
 }
