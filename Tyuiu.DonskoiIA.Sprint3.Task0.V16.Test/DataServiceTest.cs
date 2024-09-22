@@ -1,7 +1,7 @@
 using System;
-using Tyuiu.DonskoiIA.Sprint2.Task7.V9.Lib;
+using Tyuiu.DonskoiIA.Sprint3.Task0.V16.Lib;
 
-namespace Tyuiu.DonskoiIA.Sprint2.Task7.V9.Test
+namespace Tyuiu.DonskoiIA.Sprint3.Task0.V16.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -10,8 +10,8 @@ namespace Tyuiu.DonskoiIA.Sprint2.Task7.V9.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            var res = ds.CheckDotInShadedArea(Math.PI / 2, 0.5);
-            Assert.AreEqual(true, res);
+            var res = ds.GetMultiplySeries(2, 1, 2);
+            Assert.AreEqual(8, res);
         }
     }
 }

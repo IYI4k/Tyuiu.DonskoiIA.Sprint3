@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.DonskoiIA.Sprint2.Task7.V9.Lib;
+using Tyuiu.DonskoiIA.Sprint3.Task0.V16.Lib;
 
-namespace Tyuiu.DonskoiIA.Sprint2.Task7.V9
+namespace Tyuiu.DonskoiIA.Sprint3.Task0.V16
 {
     class Program
     {
@@ -13,38 +13,47 @@ namespace Tyuiu.DonskoiIA.Sprint2.Task7.V9
         {
             DataService ds = new DataService();
 
-            Console.Title = "Спринт #2 | Выполнил: Донской И. А. | АСОиУб-24-1";
+            Console.Title = "Спринт #3 | Выполнил: Донской И. А. | АСОиУб-24-1";
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #2                                                               *");
+            Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
-            Console.WriteLine("* Задание #7                                                              *");
-            Console.WriteLine("* Вариант #9                                                              *");
+            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Вариант #16                                                             *");
             Console.WriteLine("* Выполнил: Донской Иван Андреевич | АСОиУб-24-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая получает от пользователя значения для x и y *");
-            Console.WriteLine("* , после чего выводит на экран, принадлежит ли данная точка графику y =  *");
-            Console.WriteLine("* sin(x), ограниченного по 0 <= x <= 1 и 0 <= y <= 0,5.                   *");
+            Console.WriteLine("* Написать программу, которая получает от пользователя значения: x, k, n. *");
+            Console.WriteLine("* Затем она должна посчитать значение формулы и вывести результат на      *");
+            Console.WriteLine("* экран.                                                                  *");
+            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("*                              n   x                                      *");
+            Console.WriteLine("*                              П (---)^3                                  *");
+            Console.WriteLine("*                              k   k                                      *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x;
+            int x;
 
             Console.WriteLine("Введите значение x:");
-            x = Convert.ToDouble(Console.ReadLine());
+            x = Convert.ToInt32(Console.ReadLine());
 
-            double y;
+            int k;
 
-            Console.WriteLine("Введите значение y:");
-            y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите значение k:");
+            k = Convert.ToInt32(Console.ReadLine());
+
+            int n;
+
+            Console.WriteLine("Введите значение n:");
+            n = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.CheckDotInShadedArea(x, y));
+            Console.WriteLine(ds.GetMultiplySeries(x, k, n));
 
             Console.ReadLine();
         }

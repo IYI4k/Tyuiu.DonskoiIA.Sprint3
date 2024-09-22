@@ -4,19 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using tyuiu.cources.programming.interfaces.Sprint2;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
-namespace Tyuiu.DonskoiIA.Sprint2.Task7.V9.Lib
+namespace Tyuiu.DonskoiIA.Sprint3.Task0.V16.Lib
 {
-    public class DataService : ISprint2Task7V9
+    public class DataService : ISprint3Task0V16
     {
-        public bool CheckDotInShadedArea(double x, double y)
+        public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            if (x >= 0 && x <= Math.PI && y >= 0 && y <= 0.5 && y <= Math.Sin(x))
+            stopValue++;
+            double x = Convert.ToDouble(value);
+            var ans = Math.Pow(x/startValue++, 3);
+            for (int i = startValue; i < stopValue; i++)
             {
-                return true;
+                ans *= Math.Pow(x / i, 3);
             }
-            return false;
+            return ans;
         }
     }
 }
