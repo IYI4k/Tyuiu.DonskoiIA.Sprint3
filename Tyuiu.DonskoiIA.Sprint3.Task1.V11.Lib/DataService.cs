@@ -18,7 +18,7 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task1.V11.Lib
             {
                 ans *= Math.Pow(value, i) + 0.5;
             }
-            return Math.Round(ans, 3);
+            return ans;
         }
     }
 }
