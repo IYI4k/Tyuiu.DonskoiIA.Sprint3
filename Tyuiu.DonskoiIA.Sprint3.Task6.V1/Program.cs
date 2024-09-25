@@ -16,7 +16,7 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task6.V1
             Console.Title = "Спринт #3 | Выполнил: Донской И. А. | АСОиУб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Вложенные циклы                                                   *");
+            Console.WriteLine("* Тема: Обработка целочисленной информации                                *");
             Console.WriteLine("* Задание #6                                                              *");
             Console.WriteLine("* Вариант #1                                                              *");
             Console.WriteLine("* Выполнил: Донской Иван Андреевич | АСОиУб-24-1                          *");
