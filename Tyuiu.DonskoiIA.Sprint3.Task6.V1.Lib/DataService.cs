@@ -22,12 +22,17 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task6.V1.Lib
             }
             for (int i = startValue; i < stopValue; i++)
             {
-                int t = Convert.ToInt32(Math.Pow(i, 0.5)) + 1;
+                int t = Convert.ToInt32(Math.Pow(i, 0.5));
+                if (i == t * t)
+                {
+                    ans += t;
+                }
+                else t++;
                 for (int j = 2; j < t; j++)
                 {
                     if (i % j == 0)
                     {
-                        ans += j;
+                        ans += j + i / j;
                     }
                 }
                 ans += i;
