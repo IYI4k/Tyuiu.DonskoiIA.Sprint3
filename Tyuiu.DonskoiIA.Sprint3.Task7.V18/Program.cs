@@ -47,8 +47,11 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task7.V18
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
-            Console.Write(ds.GetMassFunction(x1, x2));
+            
+            foreach (double i in ds.GetMassFunction(x1, x2))
+            {
+                Console.Write($"{i} ");
+            }
 
             Console.ReadLine();
         }
