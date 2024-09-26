@@ -10,14 +10,14 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task4.V6.Lib
 {
     public class DataService : ISprint3Task4V6
     {
-        private double dsin(double angle)
+        /*private double dsin(double angle)
         {
             return (Math.Sin(angle / 180 * Math.PI));
         }
         private double dcos(double angle)
         {
             return (Math.Cos(angle / 180 * Math.PI));
-        }
+        }*/
 
         public double Calculate(int startValue, int stopValue)
         {
@@ -26,7 +26,8 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task4.V6.Lib
             for (int i = startValue; i < stopValue; i++)
             {
                 if (i == 0) break;
-                ans += i / (dcos(i) - dsin(i));
+                //ans += i / (dcos(i) - dsin(i));
+                ans += i / (Math.Cos(i) - Math.Sin(i));
             }
 
             return Math.Round(ans, 3);
