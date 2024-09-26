@@ -18,7 +18,7 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task7.V18.Lib
             int pos = 0;
             for (int i = startValue; i < stopValue; i++)
             {
-                double d = Math.Cos(i / 180.0 * Math.PI) + i;
+                double d = Math.Cos(i) + i;
                 if (d == 0)
                 {
                     ans[pos++] = 0;
