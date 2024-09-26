@@ -25,7 +25,7 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task7.V18.Lib
                     continue;
                 }
 
-                ans[pos++] = Math.Round((2 * i - 3) / d + 5, 3);
+                ans[pos++] = Math.Round((2 * i - 3) / d + 5, 2);
             }
 
             return ans;
