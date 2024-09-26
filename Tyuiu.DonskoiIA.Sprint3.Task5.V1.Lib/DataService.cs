@@ -21,7 +21,8 @@ namespace Tyuiu.DonskoiIA.Sprint3.Task5.V1.Lib
             {
                 for (int j = startValue2; j < stopValue2; j++)
                 {
-                    ans += 1 / (Math.Cos(j / 180.0 * Math.PI) + x);
+                    //ans += 1 / (Math.Cos(j / 180.0 * Math.PI) + x);
+                    ans += 1 / (Math.Cos(j) + x);
                 }
             }
             
